@@ -5,6 +5,9 @@
 ### Added
 - Added one Pi extension tool, `visual_explainer`, with `prepare` for permission-aware visual explanation planning and optional subagent scouting, plus `render` for writing and opening generated HTML pages while keeping `/generate-web-diagram` as a prompt template.
 
+### Changed
+- Compressed the visual-explainer skill and command prompts from 10,824 words to 2,131 words, an 80%+ reduction in prompt tokens, while preserving the hard rendering, Mermaid, table, slide, and review-section requirements.
+
 ## [0.7.1] - 2026-04-27
 
 ### Compatibility
