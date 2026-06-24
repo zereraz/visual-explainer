@@ -4,7 +4,7 @@ license: MIT
 compatibility: Requires a browser to view generated HTML files. Optional surf-cli for AI image generation.
 metadata:
   author: nicobailon
-  version: "0.6.3"
+  version: "0.8.0"
 ---
 
 # Visual Explainer
