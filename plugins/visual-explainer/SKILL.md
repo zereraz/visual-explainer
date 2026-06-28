@@ -79,6 +79,7 @@ Read only the references needed for the current output:
 - Good font pair families: DM Sans + Fira Code; Instrument Serif + JetBrains Mono; IBM Plex Sans + IBM Plex Mono; Bricolage Grotesque + Fragment Mono; Plus Jakarta Sans + Azeret Mono.
 - Good accent directions: terracotta+sage, teal+slate, rose+cranberry, amber+emerald, deep blue+gold.
 - Prevent overflow: `min-width: 0` on grid/flex children, `overflow-wrap: break-word` for long text, and scroll containers for wide tables/code.
+- **Labels must never be clipped.** When a badge/tag straddles a box edge (e.g. a code-block filename pill at `top: -12px`), the box must NOT have `overflow: auto/hidden` — that slices the label. Put the scroll on an inner element instead (`overflow: visible` on the badge container, `overflow-x: auto` on the inner `<pre>`/scroller). Likewise keep SVG/mermaid `<text>` inside the viewBox and tab/section labels within their pill.
 - Do not set `display: flex` directly on `<li>` when list markers matter.
 - Use depth sparingly: hero/elevated only for primary sections; flat/recessed for reference material.
 - Use entrance/hover animation only when it clarifies hierarchy. Respect `prefers-reduced-motion`. Do not use continuous glow, pulse, or breathing effects on static content.
